@@ -1,0 +1,239 @@
+{
+  "common": {
+    "nav": {
+      "home": "Beranda",
+      "shop": "Belanja",
+      "blog": "Blog",
+      "contact": "Hubungi Kami",
+      "faq": "FAQ",
+      "testimonials": "Testimoni",
+      "cart": "Keranjang",
+      "profile": "Profil",
+      "login": "Masuk",
+      "register": "Daftar",
+      "logout": "Keluar",
+      "admin": "Dashboard Admin"
+    },
+    "buttons": {
+      "submit": "Kirim",
+      "cancel": "Batal",
+      "save": "Simpan",
+      "delete": "Hapus",
+      "edit": "Edit",
+      "back": "Kembali",
+      "next": "Selanjutnya",
+      "previous": "Sebelumnya",
+      "close": "Tutup",
+      "viewAll": "Lihat Semua",
+      "loadMore": "Muat Lebih Banyak",
+      "search": "Cari",
+      "filter": "Filter",
+      "reset": "Reset",
+      "addToCart": "Tambah ke Keranjang",
+      "buyNow": "Beli Sekarang",
+      "checkout": "Checkout",
+      "confirmOrder": "Konfirmasi Pesanan",
+      "uploadProof": "Upload Bukti Pembayaran"
+    },
+    "labels": {
+      "price": "Harga",
+      "quantity": "Jumlah",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "category": "Kategori",
+      "status": "Status",
+      "date": "Tanggal",
+      "name": "Nama",
+      "email": "Email",
+      "phone": "Telepon",
+      "address": "Alamat",
+      "description": "Deskripsi",
+      "rating": "Rating",
+      "stock": "Stok",
+      "inStock": "Tersedia",
+      "outOfStock": "Stok Habis",
+      "featured": "Unggulan",
+      "new": "Baru",
+      "sale": "Diskon"
+    },
+    "language": {
+      "id": "Bahasa Indonesia",
+      "en": "English",
+      "switch": "Ganti Bahasa"
+    },
+    "currency": "Rp",
+    "footer": {
+      "copyright": "© {year} Cheerfully. Semua hak dilindungi.",
+      "tagline": "Kerajinan Manik-Manik Handmade",
+      "aboutUs": "Tentang Kami",
+      "aboutDescription": "Cheerfully adalah brand kerajinan manik-manik handmade yang menghadirkan keindahan dan keunikan di setiap produknya.",
+      "quickLinks": "Tautan Cepat",
+      "customerService": "Layanan Pelanggan",
+      "followUs": "Ikuti Kami",
+      "shipping": "Pengiriman",
+      "payment": "Pembayaran",
+      "privacy": "Kebijakan Privasi",
+      "comingSoon": "Segera Hadir"
+    }
+  },
+  "underDevelopment": {
+    "title": "Halaman Dalam Pengembangan",
+    "subtitle": "Kami sedang merangkai sesuatu yang penuh warna dan indah untuk Anda!",
+    "badge": "Dalam Pengembangan",
+    "backHome": "Kembali ke Beranda",
+    "description": "Fitur atau halaman ({feature}) ini sedang dalam tahap pembuatan. Silakan kembali lagi nanti!"
+  },
+  "home": {
+    "hero": {
+      "title": "Kerajinan Manik-Manik Handmade",
+      "subtitle": "Temukan keindahan buatan tangan yang unik dan penuh warna",
+      "cta": "Belanja Sekarang"
+    },
+    "featured": {
+      "title": "Produk Unggulan",
+      "subtitle": "Pilihan terbaik dari koleksi kami"
+    },
+    "categories": {
+      "title": "Kategori",
+      "bracelets": "Gelang",
+      "necklaces": "Kalung",
+      "earrings": "Anting",
+      "rings": "Cincin"
+    },
+    "whyUs": {
+      "title": "Kenapa Cheerfully?",
+      "handmade": {
+        "title": "100% Handmade",
+        "desc": "Setiap produk dibuat dengan tangan penuh cinta"
+      },
+      "quality": {
+        "title": "Manik Berkualitas",
+        "desc": "Material premium yang tahan lama"
+      },
+      "unique": {
+        "title": "Desain Unik",
+        "desc": "Tidak ada dua produk yang sama persis"
+      }
+    },
+    "testimonials": {
+      "title": "Apa Kata Mereka"
+    },
+    "blog": {
+      "title": "Artikel Terbaru"
+    }
+  },
+  "shop": {
+    "title": "Belanja",
+    "searchPlaceholder": "Cari produk...",
+    "sort": {
+      "label": "Urutkan",
+      "newest": "Terbaru",
+      "priceAsc": "Harga: Rendah - Tinggi",
+      "priceDesc": "Harga: Tinggi - Rendah",
+      "popular": "Terpopuler"
+    },
+    "filter": {
+      "category": "Kategori",
+      "priceRange": "Rentang Harga",
+      "allCategories": "Semua Kategori"
+    },
+    "results": "{count} produk ditemukan",
+    "noResults": "Tidak ada produk yang ditemukan",
+    "quickView": "Lihat Cepat"
+  },
+  "cart": {
+    "title": "Keranjang Belanja",
+    "empty": {
+      "title": "Keranjang Kosong",
+      "subtitle": "Belum ada produk di keranjang kamu",
+      "cta": "Mulai Belanja"
+    },
+    "removeConfirm": "Yakin ingin menghapus {product} dari keranjang?"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shippingAddress": "Alamat Pengiriman",
+    "orderSummary": "Ringkasan Pesanan",
+    "payment": {
+      "title": "Pembayaran",
+      "qrisTitle": "Scan QRIS untuk Pembayaran",
+      "qrisInstruction": "Scan kode QR di bawah ini menggunakan aplikasi e-wallet atau mobile banking kamu",
+      "uploadTitle": "Upload Bukti Pembayaran",
+      "uploadInstruction": "Setelah transfer, upload screenshot bukti pembayaran",
+      "dragDrop": "Tarik & lepas file di sini atau klik untuk memilih"
+    },
+    "success": {
+      "title": "Pesanan Berhasil!",
+      "message": "Terima kasih! Pesanan kamu sedang diproses.",
+      "orderNumber": "Nomor Pesanan: {number}"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Masuk",
+      "subtitle": "Selamat datang kembali!",
+      "googleButton": "Masuk dengan Google",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "forgotPassword": "Lupa password?",
+      "noAccount": "Belum punya akun?",
+      "registerLink": "Daftar sekarang"
+    },
+    "register": {
+      "title": "Daftar",
+      "subtitle": "Buat akun baru",
+      "nameLabel": "Nama Lengkap",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "confirmPasswordLabel": "Konfirmasi Password",
+      "hasAccount": "Sudah punya akun?",
+      "loginLink": "Masuk"
+    }
+  },
+  "contact": {
+    "title": "Hubungi Kami",
+    "subtitle": "Ada pertanyaan? Jangan ragu untuk menghubungi kami",
+    "form": {
+      "name": "Nama",
+      "email": "Email",
+      "subject": "Subjek",
+      "message": "Pesan",
+      "send": "Kirim Pesan"
+    },
+    "success": "Pesan kamu berhasil dikirim! Kami akan segera merespon."
+  },
+  "faq": {
+    "title": "Pertanyaan yang Sering Ditanyakan",
+    "subtitle": "Temukan jawaban untuk pertanyaan umum di sini"
+  },
+  "testimonials": {
+    "title": "Testimoni",
+    "subtitle": "Dengarkan apa kata pelanggan kami",
+    "writeReview": "Tulis Testimoni"
+  },
+  "profile": {
+    "title": "Profil Saya",
+    "orders": "Riwayat Pesanan",
+    "addresses": "Alamat Saya",
+    "settings": "Pengaturan"
+  },
+  "errors": {
+    "required": "{field} wajib diisi",
+    "invalidEmail": "Format email tidak valid",
+    "passwordMin": "Password minimal {min} karakter",
+    "passwordMismatch": "Password tidak cocok",
+    "serverError": "Terjadi kesalahan. Silakan coba lagi.",
+    "notFound": "Halaman tidak ditemukan",
+    "unauthorized": "Silakan login terlebih dahulu"
+  },
+  "swal": {
+    "confirmTitle": "Yakin?",
+    "confirmButton": "Ya, lanjutkan",
+    "cancelButton": "Batal",
+    "deleteTitle": "Hapus {item}?",
+    "deleteText": "Tindakan ini tidak dapat dibatalkan.",
+    "deleteButton": "Ya, hapus!",
+    "successTitle": "Berhasil!",
+    "errorTitle": "Gagal!"
+  }
+}

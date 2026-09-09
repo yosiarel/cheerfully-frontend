@@ -1,0 +1,239 @@
+{
+  "common": {
+    "nav": {
+      "home": "Home",
+      "shop": "Shop",
+      "blog": "Blog",
+      "contact": "Contact Us",
+      "faq": "FAQ",
+      "testimonials": "Testimonials",
+      "cart": "Cart",
+      "profile": "Profile",
+      "login": "Sign In",
+      "register": "Sign Up",
+      "logout": "Sign Out",
+      "admin": "Admin Dashboard"
+    },
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "save": "Save",
+      "delete": "Delete",
+      "edit": "Edit",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "close": "Close",
+      "viewAll": "View All",
+      "loadMore": "Load More",
+      "search": "Search",
+      "filter": "Filter",
+      "reset": "Reset",
+      "addToCart": "Add to Cart",
+      "buyNow": "Buy Now",
+      "checkout": "Checkout",
+      "confirmOrder": "Confirm Order",
+      "uploadProof": "Upload Payment Proof"
+    },
+    "labels": {
+      "price": "Price",
+      "quantity": "Quantity",
+      "total": "Total",
+      "subtotal": "Subtotal",
+      "category": "Category",
+      "status": "Status",
+      "date": "Date",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address",
+      "description": "Description",
+      "rating": "Rating",
+      "stock": "Stock",
+      "inStock": "In Stock",
+      "outOfStock": "Out of Stock",
+      "featured": "Featured",
+      "new": "New",
+      "sale": "Sale"
+    },
+    "language": {
+      "id": "Bahasa Indonesia",
+      "en": "English",
+      "switch": "Switch Language"
+    },
+    "currency": "Rp",
+    "footer": {
+      "copyright": "© {year} Cheerfully. All rights reserved.",
+      "tagline": "Handmade Bead Craft Jewelry",
+      "aboutUs": "About Us",
+      "aboutDescription": "Cheerfully is a handmade bead craft brand that brings beauty and uniqueness in every product.",
+      "quickLinks": "Quick Links",
+      "customerService": "Customer Service",
+      "followUs": "Follow Us",
+      "shipping": "Shipping Info",
+      "payment": "Payment Methods",
+      "privacy": "Privacy Policy",
+      "comingSoon": "Coming Soon"
+    }
+  },
+  "underDevelopment": {
+    "title": "Page Under Development",
+    "subtitle": "We are crafting something colorful and beautiful for you!",
+    "badge": "In Development",
+    "backHome": "Back to Home",
+    "description": "This feature or page ({feature}) is currently being built. Check back soon!"
+  },
+  "home": {
+    "hero": {
+      "title": "Handmade Bead Craft Jewelry",
+      "subtitle": "Discover the beauty of unique and colorful handcrafted pieces",
+      "cta": "Shop Now"
+    },
+    "featured": {
+      "title": "Featured Products",
+      "subtitle": "Our best picks from the collection"
+    },
+    "categories": {
+      "title": "Categories",
+      "bracelets": "Bracelets",
+      "necklaces": "Necklaces",
+      "earrings": "Earrings",
+      "rings": "Rings"
+    },
+    "whyUs": {
+      "title": "Why Cheerfully?",
+      "handmade": {
+        "title": "100% Handmade",
+        "desc": "Every product is lovingly crafted by hand"
+      },
+      "quality": {
+        "title": "Quality Beads",
+        "desc": "Premium materials that last"
+      },
+      "unique": {
+        "title": "Unique Designs",
+        "desc": "No two products are exactly the same"
+      }
+    },
+    "testimonials": {
+      "title": "What They Say"
+    },
+    "blog": {
+      "title": "Latest Articles"
+    }
+  },
+  "shop": {
+    "title": "Shop",
+    "searchPlaceholder": "Search products...",
+    "sort": {
+      "label": "Sort By",
+      "newest": "Newest",
+      "priceAsc": "Price: Low to High",
+      "priceDesc": "Price: High to Low",
+      "popular": "Most Popular"
+    },
+    "filter": {
+      "category": "Category",
+      "priceRange": "Price Range",
+      "allCategories": "All Categories"
+    },
+    "results": "{count} products found",
+    "noResults": "No products found",
+    "quickView": "Quick View"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": {
+      "title": "Cart is Empty",
+      "subtitle": "You haven't added any products yet",
+      "cta": "Start Shopping"
+    },
+    "removeConfirm": "Are you sure you want to remove {product} from cart?"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shippingAddress": "Shipping Address",
+    "orderSummary": "Order Summary",
+    "payment": {
+      "title": "Payment",
+      "qrisTitle": "Scan QRIS for Payment",
+      "qrisInstruction": "Scan the QR code below using your e-wallet or mobile banking app",
+      "uploadTitle": "Upload Payment Proof",
+      "uploadInstruction": "After payment, upload a screenshot of your payment proof",
+      "dragDrop": "Drag & drop file here or click to select"
+    },
+    "success": {
+      "title": "Order Successful!",
+      "message": "Thank you! Your order is being processed.",
+      "orderNumber": "Order Number: {number}"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Sign In",
+      "subtitle": "Welcome back!",
+      "googleButton": "Sign in with Google",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "forgotPassword": "Forgot password?",
+      "noAccount": "Don't have an account?",
+      "registerLink": "Sign up now"
+    },
+    "register": {
+      "title": "Sign Up",
+      "subtitle": "Create a new account",
+      "nameLabel": "Full Name",
+      "emailLabel": "Email",
+      "passwordLabel": "Password",
+      "confirmPasswordLabel": "Confirm Password",
+      "hasAccount": "Already have an account?",
+      "loginLink": "Sign in"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Have a question? Don't hesitate to reach out",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message"
+    },
+    "success": "Your message has been sent! We'll respond shortly."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions here"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Hear what our customers have to say",
+    "writeReview": "Write a Testimonial"
+  },
+  "profile": {
+    "title": "My Profile",
+    "orders": "Order History",
+    "addresses": "My Addresses",
+    "settings": "Settings"
+  },
+  "errors": {
+    "required": "{field} is required",
+    "invalidEmail": "Invalid email format",
+    "passwordMin": "Password must be at least {min} characters",
+    "passwordMismatch": "Passwords do not match",
+    "serverError": "Something went wrong. Please try again.",
+    "notFound": "Page not found",
+    "unauthorized": "Please sign in first"
+  },
+  "swal": {
+    "confirmTitle": "Are you sure?",
+    "confirmButton": "Yes, continue",
+    "cancelButton": "Cancel",
+    "deleteTitle": "Delete {item}?",
+    "deleteText": "This action cannot be undone.",
+    "deleteButton": "Yes, delete!",
+    "successTitle": "Success!",
+    "errorTitle": "Failed!"
+  }
+}
