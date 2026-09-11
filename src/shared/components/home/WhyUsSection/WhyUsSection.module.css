@@ -1,0 +1,120 @@
+/* Why Us Section: staggered layout, not uniform 3-col grid */
+
+.section {
+  padding: var(--space-16) 0;
+  background: var(--color-surface-alt);
+}
+
+.container {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--space-8);
+  }
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-h2);
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-text);
+  margin-bottom: var(--space-12);
+}
+
+/* Staggered items: alternating alignment */
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-5);
+  padding: var(--space-6);
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-clay-sm);
+  transition: box-shadow var(--duration-normal) var(--ease-default);
+}
+
+.item:hover {
+  box-shadow: var(--shadow-clay);
+}
+
+/* Stagger: offset alternate items on desktop */
+@media (min-width: 768px) {
+  .item:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+    max-width: 85%;
+  }
+
+  .item:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+    max-width: 85%;
+  }
+
+  .item:nth-child(2) {
+    max-width: 90%;
+  }
+}
+
+.iconWrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  color: #ffffff;
+}
+
+/* Each USP gets a different icon background */
+.iconHandmade {
+  background: var(--color-primary);
+}
+
+.iconQuality {
+  background: var(--color-secondary);
+}
+
+.iconUnique {
+  background: var(--color-lavender);
+}
+
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.itemTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-h4);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.itemDesc {
+  font-size: var(--text-body);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: 0;
+}

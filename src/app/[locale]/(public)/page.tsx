@@ -1,4 +1,10 @@
 import { setRequestLocale } from "next-intl/server";
+import { HeroSection } from "@/shared/components/home/HeroSection/HeroSection";
+import { CategoriesSection } from "@/shared/components/home/CategoriesSection/CategoriesSection";
+import { WhyUsSection } from "@/shared/components/home/WhyUsSection/WhyUsSection";
+import { FeaturedProducts } from "@/shared/components/home/FeaturedProducts/FeaturedProducts";
+import { TestimonialsSection } from "@/shared/components/home/TestimonialsSection/TestimonialsSection";
+import { BlogPreview } from "@/shared/components/home/BlogPreview/BlogPreview";
 
 export default async function Home({
   params,
@@ -9,9 +15,13 @@ export default async function Home({
   setRequestLocale(locale);
 
   return (
-    <div style={{ minHeight: '60vh', padding: 'var(--space-16) var(--space-8)', textAlign: 'center' }}>
-      <h1>🎨 Cheerfully</h1>
-      <p>Kerajinan Manik-Manik Handmade</p>
-    </div>
+    <>
+      <HeroSection />
+      <CategoriesSection />
+      <WhyUsSection />
+      <FeaturedProducts />
+      <TestimonialsSection />
+      <BlogPreview />
+    </>
   );
 }

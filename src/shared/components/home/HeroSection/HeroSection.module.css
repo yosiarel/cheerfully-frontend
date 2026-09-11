@@ -1,0 +1,164 @@
+/* Hero Section */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-20) 0 var(--space-16);
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+}
+
+.heroInner {
+  position: relative;
+  z-index: 2;
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .heroInner {
+    grid-template-columns: 1.2fr 0.8fr;
+    padding: 0 var(--space-6);
+    gap: var(--space-10);
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroInner {
+    padding: 0 var(--space-8);
+  }
+}
+
+/* Text column */
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .heroText {
+    text-align: left;
+  }
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.heroTitleAccent {
+  color: var(--color-primary);
+}
+
+.heroSubtitle {
+  font-size: var(--text-body-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 480px;
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .heroSubtitle {
+    margin-left: 0;
+  }
+}
+
+.heroCta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  align-self: center;
+  padding: var(--space-4) var(--space-8);
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  font-weight: 700;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  box-shadow: var(--shadow-clay-sm);
+  transition:
+    transform var(--duration-normal) var(--ease-default),
+    box-shadow var(--duration-normal) var(--ease-default),
+    background var(--duration-fast) var(--ease-default);
+}
+
+@media (min-width: 768px) {
+  .heroCta {
+    align-self: flex-start;
+  }
+}
+
+.heroCta:hover {
+  background: var(--color-primary-hover);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-clay);
+}
+
+.heroCta:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-clay-pressed);
+}
+
+/* Visual column (Lottie) */
+.heroVisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  order: -1;
+}
+
+@media (min-width: 768px) {
+  .heroVisual {
+    order: 0;
+  }
+}
+
+.lottieWrap {
+  width: 260px;
+  height: 260px;
+}
+
+@media (min-width: 768px) {
+  .lottieWrap {
+    width: 340px;
+    height: 340px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lottieWrap {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* Floating beads backdrop */
+.beadsContainer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.bead {
+  position: absolute;
+  border-radius: var(--radius-full);
+  opacity: 0.35;
+  box-shadow: var(--shadow-clay-sm);
+  animation: float 7s ease-in-out infinite alternate;
+}
