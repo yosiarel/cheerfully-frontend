@@ -1,0 +1,119 @@
+.page {
+  padding: var(--space-8) 0 var(--space-16);
+  background: var(--color-background);
+  min-height: 80vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+}
+
+.breadcrumbLink {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+}
+
+.breadcrumbLink:hover {
+  color: var(--color-primary-dark);
+}
+
+.articleCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-clay);
+}
+
+.categoryBadge {
+  display: inline-block;
+  background: rgba(232, 160, 191, 0.2);
+  color: var(--color-primary-dark);
+  padding: var(--space-1) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-4);
+  line-height: 1.25;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  padding-bottom: var(--space-6);
+  border-bottom: 2px dashed var(--color-border);
+  margin-bottom: var(--space-6);
+}
+
+.coverWrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg);
+  background: linear-gradient(135deg, #FFF0F5 0%, #E6F0FA 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: var(--space-8);
+}
+
+.coverImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text-primary);
+}
+
+.content h2, .content h3 {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+  margin: 1.8em 0 0.6em;
+}
+
+.content p {
+  margin-bottom: 1.2em;
+}
+
+.tagsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px dashed var(--color-border);
+}
+
+.tag {
+  background: var(--color-background);
+  color: var(--color-text-secondary);
+  padding: 4px var(--space-3);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
