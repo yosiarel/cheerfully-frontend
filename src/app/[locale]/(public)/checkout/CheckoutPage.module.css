@@ -1,0 +1,223 @@
+.page {
+  padding: var(--space-8) 0 var(--space-16);
+  background: var(--color-background);
+  min-height: 80vh;
+}
+
+.container {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-8);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 992px) {
+  .layout {
+    grid-template-columns: 1fr 400px;
+  }
+}
+
+.mainForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-clay);
+}
+
+.cardTitle {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-3);
+  border-bottom: 2px dashed var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+@media (min-width: 640px) {
+  .formGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.label {
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-text-primary);
+}
+
+.input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  background: var(--color-background);
+  color: var(--color-text-primary);
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+}
+
+.errorText {
+  font-size: 0.75rem;
+  color: var(--color-destructive);
+  font-weight: 600;
+}
+
+.qrisBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #FFF0F5 0%, #E6F0FA 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-bottom: var(--space-6);
+  border: 2px dashed var(--color-border);
+}
+
+.qrisImage {
+  max-width: 220px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: white;
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  margin-bottom: var(--space-4);
+}
+
+.qrisPlaceholder {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  margin-bottom: var(--space-4);
+}
+
+.uploadBox {
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  text-align: center;
+  background: var(--color-background);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background var(--transition-fast);
+}
+
+.uploadBox:hover {
+  border-color: var(--color-primary);
+  background: #FFF0F5;
+}
+
+.fileInput {
+  display: none;
+}
+
+.previewImage {
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-top: var(--space-3);
+}
+
+.summarySidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.orderItemRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  font-size: 0.9rem;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.orderItemName {
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.confirmBtn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: var(--space-4);
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  box-shadow: var(--shadow-clay);
+}
+
+.confirmBtn:hover:not(:disabled) {
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+.confirmBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

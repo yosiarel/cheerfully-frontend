@@ -9,6 +9,8 @@ import { swal } from '@/shared/lib/sweetalert';
 import { Product } from '../../types';
 import styles from './QuickViewModal.module.css';
 
+import { useCartStore } from '../../store/cartStore';
+
 interface QuickViewModalProps {
   product: Product | null;
   onClose: () => void;
@@ -36,6 +38,7 @@ export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
   const hasValidImage = product.images && product.images.length > 0 && !imgError;
 
   const handleAddToCart = () => {
+    useCartStore.getState().addItem(product, qty);
     swal.toast(
       locale === 'id'
         ? `${qty}x ${name} ditambahkan ke keranjang!`

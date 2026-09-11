@@ -9,6 +9,8 @@ import { swal } from '@/shared/lib/sweetalert';
 import { Product } from '../../types';
 import styles from './ProductCard.module.css';
 
+import { useCartStore } from '../../store/cartStore';
+
 interface ProductCardProps {
   product: Product;
   onQuickView?: (product: Product) => void;
@@ -35,7 +37,8 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
     e.preventDefault();
     e.stopPropagation();
     
-    // Toast notification via SweetAlert2
+    useCartStore.getState().addItem(product, 1);
+
     swal.toast(
       locale === 'id'
         ? `${name} ditambahkan ke keranjang!`

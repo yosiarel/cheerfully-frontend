@@ -24,6 +24,8 @@ import {
 } from 'lucide-react';
 import styles from './Header.module.css';
 
+import { useCartStore } from '@/domains/shop/store/cartStore';
+
 interface NavItem {
   label: string;
   href: string;
@@ -44,8 +46,8 @@ export function Header() {
   const langRef = useRef<HTMLDivElement>(null);
   const userRef = useRef<HTMLDivElement>(null);
 
-  // TODO: Connect to cart store later
-  const cartCount = 0;
+  const cartItems = useCartStore((state) => state.items);
+  const cartCount = cartItems.reduce((total, item) => total + item.quantity, 0);
 
   const navItems: NavItem[] = [
     { label: t('nav.home'), href: `/${locale}`, icon: <Home size={18} /> },

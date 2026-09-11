@@ -11,6 +11,7 @@ import {
   shopApi,
   Product,
   ProductCard,
+  useCartStore,
 } from '@/domains/shop';
 import styles from './ProductDetailPage.module.css';
 
@@ -97,6 +98,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
   const isOutOfStock = product.stock <= 0;
 
   const handleAddToCart = () => {
+    useCartStore.getState().addItem(product, qty);
     swal.toast(
       locale === 'id'
         ? `${qty}x ${name} ditambahkan ke keranjang!`
@@ -106,12 +108,7 @@ export default function ProductDetailPage({ params }: ProductDetailPageProps) {
   };
 
   const handleBuyNow = () => {
-    swal.toast(
-      locale === 'id'
-        ? `Lanjut ke checkout untuk ${name}!`
-        : `Proceeding to checkout for ${name}!`,
-      'success'
-    );
+    useCartStore.getState().addItem(product, qty);
     router.push(`/${locale}/cart`);
   };
 
