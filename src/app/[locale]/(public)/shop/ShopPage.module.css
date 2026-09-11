@@ -1,0 +1,111 @@
+.page {
+  padding: var(--space-8) 0 var(--space-16);
+  background: var(--color-background);
+  min-height: 80vh;
+}
+
+.container {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+.header {
+  margin-bottom: var(--space-8);
+  text-align: center;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.subtitle {
+  font-size: 1.05rem;
+  color: var(--color-text-secondary);
+  max-width: 540px;
+  margin: 0 auto var(--space-6);
+}
+
+.topBar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+@media (min-width: 768px) {
+  .topBar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.mobileFilterBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-full);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  box-shadow: var(--shadow-clay);
+}
+
+@media (min-width: 992px) {
+  .mobileFilterBtn {
+    display: none;
+  }
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+}
+
+@media (min-width: 992px) {
+  .layout {
+    grid-template-columns: 280px 1fr;
+  }
+}
+
+.sidebarWrapper {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .sidebarWrapper {
+    display: block;
+  }
+}
+
+.mobileDrawer {
+  position: fixed;
+  inset: 0;
+  background: rgba(45, 45, 63, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobileDrawerContent {
+  background: var(--color-surface);
+  width: 320px;
+  max-width: 85vw;
+  height: 100%;
+  overflow-y: auto;
+  padding: var(--space-6);
+  box-shadow: var(--shadow-elevated);
+}

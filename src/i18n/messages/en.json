@@ -123,23 +123,33 @@
     }
   },
   "shop": {
-    "title": "Shop",
-    "searchPlaceholder": "Search products...",
-    "sort": {
-      "label": "Sort By",
-      "newest": "Newest",
-      "priceAsc": "Price: Low to High",
-      "priceDesc": "Price: High to Low",
-      "popular": "Most Popular"
-    },
-    "filter": {
-      "category": "Category",
-      "priceRange": "Price Range",
-      "allCategories": "All Categories"
-    },
-    "results": "{count} products found",
-    "noResults": "No products found",
-    "quickView": "Quick View"
+    "title": "Shop Catalog",
+    "searchPlaceholder": "Search bracelets, necklaces, rings...",
+    "filter": "Filter Products",
+    "reset": "Reset Filters",
+    "category": "Category",
+    "allProducts": "All Products",
+    "sort": "Sort By",
+    "sortNewest": "Newest",
+    "sortPriceLowHigh": "Price: Low to High",
+    "sortPriceHighLow": "Price: High to Low",
+    "priceRange": "Price Range",
+    "apply": "Apply",
+    "inStock": "Stock",
+    "outOfStock": "Out of Stock",
+    "addToCart": "Add to Cart",
+    "quickView": "Quick View",
+    "noProductsFound": "No Products Found",
+    "noProductsDesc": "Try changing your search query or adjusting your filters.",
+    "resetFilters": "Reset Filters",
+    "quantity": "Quantity",
+    "viewFullDetail": "View Full Details",
+    "relatedProducts": "Related Products",
+    "productDescription": "Product Description",
+    "productInfo": "Product Information",
+    "sku": "SKU",
+    "weight": "Weight",
+    "results": "{count} products found"
   },
   "cart": {
     "title": "Shopping Cart",

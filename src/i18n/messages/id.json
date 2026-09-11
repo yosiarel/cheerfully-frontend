@@ -123,23 +123,33 @@
     }
   },
   "shop": {
-    "title": "Belanja",
-    "searchPlaceholder": "Cari produk...",
-    "sort": {
-      "label": "Urutkan",
-      "newest": "Terbaru",
-      "priceAsc": "Harga: Rendah - Tinggi",
-      "priceDesc": "Harga: Tinggi - Rendah",
-      "popular": "Terpopuler"
-    },
-    "filter": {
-      "category": "Kategori",
-      "priceRange": "Rentang Harga",
-      "allCategories": "Semua Kategori"
-    },
-    "results": "{count} produk ditemukan",
-    "noResults": "Tidak ada produk yang ditemukan",
-    "quickView": "Lihat Cepat"
+    "title": "Katalog Belanja",
+    "searchPlaceholder": "Cari gelang, kalung, cincin...",
+    "filter": "Filter Produk",
+    "reset": "Reset Filter",
+    "category": "Kategori",
+    "allProducts": "Semua Produk",
+    "sort": "Urutkan",
+    "sortNewest": "Terbaru",
+    "sortPriceLowHigh": "Harga: Rendah ke Tinggi",
+    "sortPriceHighLow": "Harga: Tinggi ke Rendah",
+    "priceRange": "Rentang Harga (Rp)",
+    "apply": "Terapkan",
+    "inStock": "Stok",
+    "outOfStock": "Stok Habis",
+    "addToCart": "Tambah ke Keranjang",
+    "quickView": "Lihat Cepat",
+    "noProductsFound": "Produk Tidak Ditemukan",
+    "noProductsDesc": "Coba ubah kata kunci pencarian atau sesuaikan filter Anda.",
+    "resetFilters": "Reset Filter",
+    "quantity": "Jumlah",
+    "viewFullDetail": "Lihat Detail Lengkap",
+    "relatedProducts": "Produk Terkait",
+    "productDescription": "Deskripsi Produk",
+    "productInfo": "Informasi Produk",
+    "sku": "SKU",
+    "weight": "Berat",
+    "results": "{count} produk ditemukan"
   },
   "cart": {
     "title": "Keranjang Belanja",
