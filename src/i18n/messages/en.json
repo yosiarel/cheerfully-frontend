@@ -119,7 +119,14 @@
       "title": "What They Say"
     },
     "blog": {
-      "title": "Latest Articles"
+      "title": "Latest Articles",
+      "loading": "Loading article...",
+      "notFoundTitle": "Article Not Found",
+      "notFoundDesc": "The article you are looking for was not found or has been removed.",
+      "backToBlog": "Back to Blog",
+      "by": "By",
+      "home": "Home",
+      "blog": "Blog"
     }
   },
   "shop": {
@@ -214,7 +221,9 @@
   },
   "faq": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions here"
+    "subtitle": "Find answers to common questions here",
+    "loading": "Loading FAQ...",
+    "empty": "No frequently asked questions available yet."
   },
   "testimonials": {
     "title": "Testimonials",

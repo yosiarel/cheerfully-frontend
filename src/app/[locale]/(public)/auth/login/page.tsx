@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import { signIn } from 'next-auth/react';
 import { useLocale, useTranslations } from 'next-intl';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -42,6 +43,18 @@ export default function LoginPage() {
     setIsSubmitting(true);
     try {
       const res = await authApi.login(values);
+      
+      // Authenticate with NextAuth to set the session cookie for middleware
+      const nextAuthRes = await signIn('credentials', {
+        redirect: false,
+        email: values.email,
+        password: values.password,
+      });
+
+      if (nextAuthRes?.error) {
+        throw new Error('Autentikasi sesi gagal.');
+      }
+
       setAuth(res.user, res.accessToken);
 
       swal.toast(

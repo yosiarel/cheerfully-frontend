@@ -33,7 +33,7 @@ export default async function LocaleLayout({
           Skip to content
         </a>
         <AuthProvider>
-          <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider locale={locale} messages={messages}>
             {children}
           </NextIntlClientProvider>
         </AuthProvider>

@@ -52,11 +52,11 @@ export default function FAQPage() {
 
         {isLoading ? (
           <div style={{ textAlign: 'center', padding: '48px 0' }}>
-            <p>Memuat FAQ...</p>
+            <p>{t('loading')}</p>
           </div>
         ) : faqs.length === 0 ? (
           <div style={{ textAlign: 'center', padding: '48px 0', background: 'var(--color-surface)', borderRadius: 'var(--radius-xl)', boxShadow: 'var(--shadow-clay)' }}>
-            <p>Belum ada pertanyaan umum.</p>
+            <p>{t('empty')}</p>
           </div>
         ) : (
           <div className={styles.accordionList}>

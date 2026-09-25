@@ -1,5 +1,6 @@
 import { Header } from '@/shared/components/layout/Header';
 import { Footer } from '@/shared/components/layout/Footer';
+import { FloatingWhatsApp } from '@/shared/components/ui/FloatingWhatsApp/FloatingWhatsApp';
 
 export default function PublicLayout({
   children,
@@ -10,6 +11,7 @@ export default function PublicLayout({
     <>
       <Header />
       <main id="main-content">{children}</main>
+      <FloatingWhatsApp />
       <Footer />
     </>
   );

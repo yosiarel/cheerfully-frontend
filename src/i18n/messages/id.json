@@ -119,7 +119,14 @@
       "title": "Apa Kata Mereka"
     },
     "blog": {
-      "title": "Artikel Terbaru"
+      "title": "Artikel Terbaru",
+      "loading": "Memuat artikel...",
+      "notFoundTitle": "Artikel Tidak Ditemukan",
+      "notFoundDesc": "Artikel yang Anda cari tidak ditemukan atau telah dihapus.",
+      "backToBlog": "Kembali ke Blog",
+      "by": "Oleh",
+      "home": "Beranda",
+      "blog": "Blog"
     }
   },
   "shop": {
@@ -214,7 +221,9 @@
   },
   "faq": {
     "title": "Pertanyaan yang Sering Ditanyakan",
-    "subtitle": "Temukan jawaban untuk pertanyaan umum di sini"
+    "subtitle": "Temukan jawaban untuk pertanyaan umum di sini",
+    "loading": "Memuat FAQ...",
+    "empty": "Belum ada pertanyaan umum."
   },
   "testimonials": {
     "title": "Testimoni",

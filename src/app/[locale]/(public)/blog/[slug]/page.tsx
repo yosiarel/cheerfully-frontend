@@ -2,7 +2,7 @@
 
 import { use, useEffect, useState } from 'react';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { ChevronRight, ArrowLeft } from 'lucide-react';
 import { formatDate } from '@/shared/lib/formatters';
 import { blogApi, BlogPost } from '@/domains/blog';
@@ -18,6 +18,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
 
   const [post, setPost] = useState<BlogPost | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const t = useTranslations('blog');
 
   useEffect(() => {
     setIsLoading(true);
@@ -32,7 +33,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
     return (
       <div className={styles.page}>
         <div className={styles.container} style={{ textAlign: 'center', padding: '64px 0' }}>
-          <p>Memuat artikel...</p>
+          <p>{t('loading')}</p>
         </div>
       </div>
     );
@@ -42,10 +43,10 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
     return (
       <div className={styles.page}>
         <div className={styles.container} style={{ textAlign: 'center', padding: '64px 0' }}>
-          <h2>Artikel Tidak Ditemukan</h2>
-          <p style={{ margin: '16px 0 24px' }}>Artikel yang Anda cari tidak ditemukan atau telah dihapus.</p>
+          <h2>{t('notFoundTitle')}</h2>
+          <p style={{ margin: '16px 0 24px' }}>{t('notFoundDesc')}</p>
           <Link href={`/${locale}/blog`} style={{ background: 'var(--color-primary)', color: 'white', padding: '12px 24px', borderRadius: 'var(--radius-full)', textDecoration: 'none', fontWeight: 700 }}>
-            Kembali ke Blog
+            {t('backToBlog')}
           </Link>
         </div>
       </div>
@@ -60,11 +61,11 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
       <div className={styles.container}>
         <nav className={styles.breadcrumb} aria-label="Breadcrumb">
           <Link href={`/${locale}`} className={styles.breadcrumbLink}>
-            Beranda
+            {t('home')}
           </Link>
           <ChevronRight size={14} />
           <Link href={`/${locale}/blog`} className={styles.breadcrumbLink}>
-            Blog
+            {t('blog')}
           </Link>
           <ChevronRight size={14} />
           <span>{title}</span>
@@ -75,7 +76,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
           <h1 className={styles.title}>{title}</h1>
 
           <div className={styles.metaRow}>
-            <span>Oleh <strong>{post.author}</strong></span>
+            <span>{t('by')} <strong>{post.author}</strong></span>
             <span>•</span>
             <span>{formatDate(post.publishedAt || post.createdAt, locale)}</span>
           </div>
@@ -109,7 +110,7 @@ export default function BlogDetailPage({ params }: BlogDetailPageProps) {
               style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', color: 'var(--color-primary-dark)', fontWeight: 700, textDecoration: 'none' }}
             >
               <ArrowLeft size={18} />
-              <span>Kembali ke semua artikel</span>
+              <span>{t('backToBlog')}</span>
             </Link>
           </div>
         </article>

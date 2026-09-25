@@ -11,7 +11,8 @@ interface BlogPost {
   slug: string;
   titleId: string;
   titleEn: string;
-  excerpt: string | null;
+  excerptId: string | null;
+  excerptEn: string | null;
   coverImage: string | null;
   category: string;
   publishedAt: string | null;
@@ -111,8 +112,8 @@ export function BlogPreview() {
                 <div className={styles.blogInfo}>
                   <span className={styles.blogCategory}>{post.category}</span>
                   <h3 className={styles.blogTitle}>{getTitle(post)}</h3>
-                  {post.excerpt && (
-                    <p className={styles.blogExcerpt}>{post.excerpt}</p>
+                  {(locale === 'id' ? post.excerptId : post.excerptEn) && (
+                    <p className={styles.blogExcerpt}>{locale === 'id' ? post.excerptId : post.excerptEn}</p>
                   )}
                   <span className={styles.blogDate}>
                     {formatDate(post.publishedAt || post.createdAt, locale)}
