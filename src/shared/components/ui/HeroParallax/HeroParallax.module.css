@@ -1,0 +1,133 @@
+.container {
+  height: 300vh;
+  padding-top: var(--space-24);
+  padding-bottom: var(--space-24);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  background: var(--color-background);
+}
+
+.header {
+  max-width: var(--container-lg);
+  position: relative;
+  margin: 0 auto;
+  padding: var(--space-20) var(--space-4);
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-top: var(--space-32);
+    padding-bottom: var(--space-32);
+  }
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 800;
+  color: var(--color-text);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  max-width: 600px;
+  font-size: var(--text-body-lg);
+  margin-top: var(--space-6);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.motionWrapper {
+  /* Handled by framer-motion inline styles */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem; /* ~space-x-20 */
+  margin-bottom: 5rem;
+}
+
+.rowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+/* Ensure children in reverse row also space correctly if gap isn't supported, but gap is widely supported now */
+
+.productCard {
+  height: 24rem; /* h-96 */
+  width: 30rem; /* w-[30rem] */
+  position: relative;
+  flex-shrink: 0;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-clay-sm);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.productLink {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.productCard:hover .productLink {
+  box-shadow: var(--shadow-clay-lg);
+}
+
+.productImage {
+  object-fit: cover;
+  object-position: left top;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+  transition: transform 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.productCard:hover .overlay {
+  opacity: 1;
+}
+
+.productTitle {
+  position: absolute;
+  bottom: var(--space-4);
+  left: var(--space-4);
+  opacity: 0;
+  color: white;
+  font-family: var(--font-display);
+  font-size: var(--text-h4);
+  font-weight: 700;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+}
+
+.productCard:hover .productTitle {
+  opacity: 1;
+  transform: translateY(0);
+}

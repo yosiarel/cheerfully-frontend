@@ -1,0 +1,102 @@
+/* Image Break Section with Front/Back Layering */
+
+.section {
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+  min-height: 500px;
+  max-height: 900px;
+  overflow: hidden;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface);
+  background-image: radial-gradient(circle at center, #ffffff 0%, var(--color-surface) 100%);
+}
+
+.typography {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 10vw, 12rem);
+  font-weight: 900;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* 1. TEXT DI KANAN ATAS (BE BOLD) - DI BELAKANG TANGAN */
+.boldTextWrap {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  z-index: 1; /* Di belakang tangan */
+  width: auto;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.boldText {
+  color: var(--color-text); /* Warna gelap */
+  margin: 0;
+  justify-content: flex-end;
+}
+
+/* 2. GAMBAR TANGAN DI TENGAH-KIRI */
+.handWrap {
+  position: absolute;
+  z-index: 2; /* Di depan Be Bold, di belakang Be Cheerfully */
+  bottom: -5%;
+  left: -5%;
+  width: 95%;
+  max-width: 1100px;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.handImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: left bottom;
+  filter: drop-shadow(15px 25px 40px rgba(232, 160, 191, 0.3));
+  transform: rotate(5deg);
+}
+
+/* 3. TEXT DI KIRI BAWAH (BE CHEERFULLY) - DI DEPAN TANGAN */
+.brandTextWrap {
+  position: absolute;
+  bottom: -10%;
+  left: 5%;
+  z-index: 3; /* Paling depan menutupi tangan */
+  width: auto;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.brandText {
+  color: transparent; /* Agar tembus pandang jika tidak ada fill, atau kita beri fill */
+  /* User minta "bagian atas outline teksnya menutupi tangannya" */
+  -webkit-text-stroke: 3px var(--color-primary); /* Outline pink yang tebal */
+  color: rgba(232, 160, 191, 0.1); /* Isi sangat transparan agar outline yang mendominasi */
+  margin: 0;
+  justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+  .boldTextWrap {
+    top: 35%;
+    right: 12%;
+  }
+  .handWrap {
+    width: 75%;
+    left: -2%;
+  }
+  .brandTextWrap {
+    left: 8%;
+    bottom: -15%;
+  }
+}

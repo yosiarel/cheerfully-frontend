@@ -86,37 +86,52 @@
   "home": {
     "hero": {
       "title": "Kerajinan Manik-Manik Handmade",
-      "subtitle": "Temukan keindahan buatan tangan yang unik dan penuh warna",
-      "cta": "Belanja Sekarang"
+      "subtitle": "Temukan keindahan buatan tangan yang unik, penuh warna, dan membawa senyum di setiap harimu",
+      "cta": "Jelajahi Koleksi",
+      "badge": "✨ Handmade Beads Jewelry"
     },
     "featured": {
       "title": "Produk Unggulan",
-      "subtitle": "Pilihan terbaik dari koleksi kami"
+      "subtitle": "Pilihan favorit paling berkilau dari koleksi kami"
     },
     "categories": {
-      "title": "Kategori",
+      "title": "Kategori Perhiasan",
+      "subtitle": "Pilih koleksi perhiasan manik kesukaanmu",
       "bracelets": "Gelang",
+      "braceletsDesc": "Gelang manik manis dengan paduan warna pastel favoritmu.",
       "necklaces": "Kalung",
+      "necklacesDesc": "Kalung manik aesthetic pemberi nuansa ceria setiap penampilan.",
       "earrings": "Anting",
-      "rings": "Cincin"
+      "earringsDesc": "Anting manik ringan & unik yang bikin tampilan makin gemes.",
+      "rings": "Cincin",
+      "ringsDesc": "Cincin manik clay imut serasi dipadukan di setiap jemarimu."
     },
-    "whyUs": {
-      "title": "Kenapa Cheerfully?",
-      "handmade": {
-        "title": "100% Handmade",
-        "desc": "Setiap produk dibuat dengan tangan penuh cinta"
-      },
-      "quality": {
-        "title": "Manik Berkualitas",
-        "desc": "Material premium yang tahan lama"
-      },
-      "unique": {
-        "title": "Desain Unik",
-        "desc": "Tidak ada dua produk yang sama persis"
-      }
+    "story": {
+      "badge": "Kisah Kami",
+      "title": "Jalinan Cerita di Setiap Manik-Manik",
+      "subtitle": "Scroll untuk mengikuti bagaimana sebutir manik dirangkai dengan cinta menjadi gelang cantik",
+      "step1Title": "1. Inspirasi Warna Pastel",
+      "step1Desc": "Setiap perhiasan lahir dari inspirasi warna pastel yang hangat dan keceriaan suasana hati.",
+      "step2Title": "2. Seleksi Manik Clay Premium",
+      "step2Desc": "Kami memilah manik-manik clay berkualitas tinggi yang mulus, ringan, dan ramah kulit.",
+      "step3Title": "3. Merangkai Penuh Ketelitian",
+      "step3Desc": "Pengrajin merangkai setiap butir manik dengan sabar dan dedikasi di studio Cheerfully.",
+      "step4Title": "4. Sentuhan Detail & Charm",
+      "step4Desc": "Menambahkan liontin charm imut dan pengait stainless kokoh yang tahan lama.",
+      "step5Title": "5. Uji Kualitas Ketat",
+      "step5Desc": "Setiap produk melalui pemeriksaan detail sebelum dibungkus dengan pouch cantik.",
+      "step6Title": "6. Melingkar Manis di Tanganmu",
+      "step6Desc": "Gelang manik Cheerfully siap menebarkan energi positif & senyuman untuk harimu!"
     },
     "testimonials": {
-      "title": "Apa Kata Mereka"
+      "title": "Cerita & Senyuman Pelanggan",
+      "subtitle": "Geser dan bebas geser gelembung pesan di bawah ini untuk membaca kebahagiaan mereka!",
+      "dragHint": "💡 Tips: Kamu bisa menggeser (drag) gelembung chat di bawah ini!"
+    },
+    "cta": {
+      "title": "Siap Menyebarkan Keceriaan Harimu?",
+      "subtitle": "Temukan perhiasan manik handmade favoritmu atau custom hadiah manis untuk orang tersayang.",
+      "button": "Belanja Koleksi Sekarang"
     },
     "blog": {
       "title": "Artikel Terbaru",

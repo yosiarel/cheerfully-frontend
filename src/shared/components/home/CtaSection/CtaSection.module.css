@@ -1,0 +1,172 @@
+/* CTA Section */
+
+.section {
+  padding: var(--space-16) 0 var(--space-20);
+  background: var(--color-background);
+}
+
+.container {
+  max-width: var(--container-lg);
+  margin: 0 auto;
+  padding: 0 var(--space-4);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--space-6);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--space-8);
+  }
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(232, 160, 191, 0.25) 0%, rgba(184, 192, 255, 0.25) 100%);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12) var(--space-6);
+  box-shadow: var(--shadow-clay-lg);
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: var(--space-16) var(--space-12);
+  }
+}
+
+.cardContent {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .cardContent {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+@media (min-width: 1024px) {
+  .textContent {
+    align-items: flex-start;
+    max-width: 60%;
+  }
+}
+
+.iconBadge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-clay-sm);
+}
+
+.heartIcon {
+  color: var(--color-primary);
+  fill: var(--color-primary);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: var(--text-body-lg);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-10);
+  background: var(--color-primary);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: var(--text-button);
+  font-weight: 700;
+  border-radius: var(--radius-xl);
+  text-decoration: none;
+  box-shadow: var(--shadow-clay);
+  margin-top: var(--space-2);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.ctaButton:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: var(--shadow-clay-lg);
+  color: #ffffff;
+}
+
+.ctaButton:active {
+  transform: translateY(0);
+}
+
+/* Floating bead decorations */
+.beadDecor {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  box-shadow: var(--shadow-clay-sm);
+}
+
+.d1 {
+  width: 36px;
+  height: 36px;
+  top: 15%;
+  left: 8%;
+}
+
+.d2 {
+  width: 24px;
+  height: 24px;
+  bottom: 20%;
+  left: 12%;
+}
+
+.d3 {
+  width: 42px;
+  height: 42px;
+  top: 20%;
+  right: 10%;
+}
+
+.d4 {
+  width: 28px;
+  height: 28px;
+  bottom: 15%;
+  right: 14%;
+}

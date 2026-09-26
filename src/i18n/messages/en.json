@@ -86,37 +86,52 @@
   "home": {
     "hero": {
       "title": "Handmade Bead Craft Jewelry",
-      "subtitle": "Discover the beauty of unique and colorful handcrafted pieces",
-      "cta": "Shop Now"
+      "subtitle": "Discover unique, colorful handcrafted jewelry that brings a smile to every day",
+      "cta": "Explore Collection",
+      "badge": "✨ Handmade Beads Jewelry"
     },
     "featured": {
       "title": "Featured Products",
-      "subtitle": "Our best picks from the collection"
+      "subtitle": "Our most sparkling favorite picks from the collection"
     },
     "categories": {
-      "title": "Categories",
+      "title": "Jewelry Categories",
+      "subtitle": "Choose your favorite bead jewelry collection",
       "bracelets": "Bracelets",
+      "braceletsDesc": "Sweet bead bracelets with your favorite pastel color combinations.",
       "necklaces": "Necklaces",
+      "necklacesDesc": "Aesthetic bead necklaces giving a cheerful vibe to every outfit.",
       "earrings": "Earrings",
-      "rings": "Rings"
+      "earringsDesc": "Lightweight & unique bead earrings for an extra cute look.",
+      "rings": "Rings",
+      "ringsDesc": "Adorable clay bead rings perfect for mix-and-matching."
     },
-    "whyUs": {
-      "title": "Why Cheerfully?",
-      "handmade": {
-        "title": "100% Handmade",
-        "desc": "Every product is lovingly crafted by hand"
-      },
-      "quality": {
-        "title": "Quality Beads",
-        "desc": "Premium materials that last"
-      },
-      "unique": {
-        "title": "Unique Designs",
-        "desc": "No two products are exactly the same"
-      }
+    "story": {
+      "badge": "Our Story",
+      "title": "Stories Woven in Every Bead",
+      "subtitle": "Scroll to follow how each bead is lovingly crafted into a beautiful bracelet",
+      "step1Title": "1. Pastel Color Inspiration",
+      "step1Desc": "Every piece is born from warm pastel palette inspiration and cheerful moods.",
+      "step2Title": "2. Premium Clay Bead Selection",
+      "step2Desc": "We select smooth, lightweight, skin-friendly high quality clay beads.",
+      "step3Title": "3. Crafting with Precision",
+      "step3Desc": "Our artisans string each bead patiently with dedication in our studio.",
+      "step4Title": "4. Detail & Charm Touches",
+      "step4Desc": "Adding cute charm pendants and durable stainless steel clasps.",
+      "step5Title": "5. Strict Quality Control",
+      "step5Desc": "Every piece passes detail inspection before being packed into cozy pouches.",
+      "step6Title": "6. Sparkling Around Your Wrist",
+      "step6Desc": "Cheerfully bead bracelets ready to spread positivity & smiles for your day!"
     },
     "testimonials": {
-      "title": "What They Say"
+      "title": "Customer Stories & Smiles",
+      "subtitle": "Drag and move the chat bubbles below freely to read their happy thoughts!",
+      "dragHint": "💡 Tip: You can drag the chat bubbles around!"
+    },
+    "cta": {
+      "title": "Ready to Brighten Your Day?",
+      "subtitle": "Find your favorite handmade bead jewelry or custom a sweet gift for your loved ones.",
+      "button": "Shop Collection Now"
     },
     "blog": {
       "title": "Latest Articles",
