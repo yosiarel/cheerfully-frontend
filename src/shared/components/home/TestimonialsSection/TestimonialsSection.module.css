@@ -63,9 +63,9 @@
 /* Absolute bubbles */
 .chatBubble {
   position: absolute;
-  width: 280px;
-  padding: var(--space-5);
-  border-radius: var(--radius-xl);
+  width: 240px; /* Smaller on mobile */
+  padding: var(--space-4);
+  border-radius: var(--radius-lg);
   border: 2px solid;
   box-shadow: var(--shadow-clay-md);
   cursor: grab;
@@ -73,9 +73,24 @@
   user-select: none;
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-2);
   backdrop-filter: blur(8px);
   pointer-events: auto;
+}
+
+@media (min-width: 640px) {
+  .chatBubble {
+    width: 280px;
+    padding: var(--space-5);
+    border-radius: var(--radius-xl);
+    gap: var(--space-3);
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    min-height: 1000px; /* Adjust height since bubbles are smaller and clustered */
+  }
 }
 
 @media (min-width: 768px) {

@@ -18,7 +18,7 @@
 
 .typography {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 10vw, 12rem);
+  font-size: clamp(2rem, 9vw, 12rem);
   font-weight: 900;
   line-height: 0.95;
   letter-spacing: -0.04em;
@@ -26,12 +26,37 @@
   white-space: nowrap;
 }
 
-/* 1. TEXT DI KANAN ATAS (BE BOLD) - DI BELAKANG TANGAN */
+@media (max-width: 640px) {
+  .section {
+    height: 60vh;
+    min-height: 400px;
+    max-height: 600px;
+  }
+  .typography {
+    font-size: clamp(1.8rem, 10vw, 3rem);
+  }
+  .boldTextWrap {
+    top: auto; /* Clear the top property */
+    bottom: 35%; /* Anchor to bottom so it stays close to the hand */
+    right: 5%;
+  }
+  .handWrap {
+    bottom: 10%;
+    left: -10%;
+    width: 115%; /* Scale hand larger on mobile to maintain impact */
+  }
+  .brandTextWrap {
+    bottom: 2%;
+    left: 2%;
+  }
+}
+
+/* 1. TEXT DI KANAN ATAS (BE BOLD) - DI DEPAN TANGAN */
 .boldTextWrap {
   position: absolute;
   top: 25%;
   right: 5%;
-  z-index: 1; /* Di belakang tangan */
+  z-index: 3; /* Di depan tangan atas permintaan user */
   width: auto;
   text-align: right;
   display: flex;

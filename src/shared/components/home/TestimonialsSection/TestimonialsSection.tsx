@@ -37,6 +37,7 @@ export function TestimonialsSection() {
   const [loading, setLoading] = useState(true);
   const containerRef = useRef<HTMLDivElement>(null);
   const [highestZIndex, setHighestZIndex] = useState(10);
+  const [zIndexes, setZIndexes] = useState<Record<string, number>>({});
   const [windowWidth, setWindowWidth] = useState(1200);
 
   useEffect(() => {
@@ -66,8 +67,9 @@ export function TestimonialsSection() {
     return () => { cancelled = true; };
   }, []);
 
-  const handleCardClick = () => {
+  const handleCardClick = (id: string) => {
     setHighestZIndex((prev) => prev + 1);
+    setZIndexes((prev) => ({ ...prev, [id]: highestZIndex + 1 }));
   };
 
   if (!loading && testimonials.length === 0) {
@@ -76,8 +78,20 @@ export function TestimonialsSection() {
 
   // Pre-calculated scattered positions based on index (simulating random but fixed for SSR matching)
   const getBubblePosition = (index: number) => {
-    // Generate scattered positions around the center
-    // Avoid the very center where the text is
+    if (windowWidth < 768) {
+      // Mobile: Cluster at the top and bottom to leave the center text clear
+      const mobilePositions = [
+        { top: '5%', left: '5%' },
+        { top: '15%', right: '5%' },
+        { top: '25%', left: '10%' },
+        { bottom: '25%', right: '5%' },
+        { bottom: '15%', left: '5%' },
+        { bottom: '5%', right: '10%' },
+      ];
+      return mobilePositions[index % mobilePositions.length];
+    }
+    
+    // Desktop: Scattered around the center
     const positions = [
       { top: '15%', left: '10%' },
       { top: '20%', right: '15%' },
@@ -130,7 +144,7 @@ export function TestimonialsSection() {
                 dragTransition={{ bounceStiffness: 300, bounceDamping: 20 }}
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 1.06, cursor: 'grabbing' }}
-                onPointerDown={() => handleCardClick()}
+                onPointerDown={() => handleCardClick(item.id)}
                 initial={{ opacity: 0, scale: 0.8, y: 50 }}
                 whileInView={{ opacity: 1, scale: 1, y: 0 }}
                 viewport={{ once: false, margin: '-50px' }}
@@ -142,6 +156,7 @@ export function TestimonialsSection() {
                 style={{
                   backgroundColor: theme.bg,
                   borderColor: theme.border,
+                  zIndex: zIndexes[item.id] || index,
                   ...pos
                 }}
               >
